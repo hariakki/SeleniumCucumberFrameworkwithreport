@@ -1,0 +1,7 @@
+PageObjects\EditComputerPage.class
+StepDefinitions\CreateComputerSteps.class
+TestRunner\TestRunner.class
+Utility\BrowserUtility.class
+Utility\PropertiesFileReader.class
+PageObjects\CreateComputerPage.class
+StepDefinitions\EditComputerSteps.class

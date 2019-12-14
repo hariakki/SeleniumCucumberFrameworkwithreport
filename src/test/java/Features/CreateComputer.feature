@@ -6,5 +6,4 @@ Feature: Test create computer Action
     When user adds computer with data
     |Home basic	 |Sony	       |2019-09-15     |
     And verify the computer in the Filter list "Home basic"
-    Then added computer should be available in the list "15 Sep 2019"
-
+    Then added computer should be available in the list "15 2019"

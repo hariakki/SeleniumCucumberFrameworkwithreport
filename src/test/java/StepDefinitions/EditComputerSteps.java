@@ -4,9 +4,9 @@ import PageObjects.CreateComputerPage;
 import PageObjects.EditComputerPage;
 import Utility.BrowserUtility;
 import Utility.PropertiesFileReader;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,13 +16,13 @@ import java.util.Properties;
 
 public class EditComputerSteps {
 
-    private static WebDriver driver;
+    private WebDriver driver;
     PropertiesFileReader obj=new PropertiesFileReader();
 
     @Given("user is navigated to computer application for edit a computer")
     public void userIsNavigatedToComputerApplicationForEditAComputer() throws Exception {
         Properties properties=obj.getProperty();
-        driver= BrowserUtility.opeBrowser(driver,properties.getProperty("browser.driverVersion"),properties.getProperty("browser.browserName"),properties.getProperty("browser.baseURL"));
+        driver= BrowserUtility.openBrowser(driver,properties.getProperty("browser.driverVersion"),properties.getProperty("browser.browserName"),properties.getProperty("browser.baseURL"));
     }
 
     @When("^user Edit introduced date as \"([^\"]*)\" of computer \"([^\"]*)\"$")

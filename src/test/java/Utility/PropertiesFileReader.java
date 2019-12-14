@@ -9,7 +9,7 @@ public class PropertiesFileReader {
         FileInputStream inputStream = null;
         Properties properties= new Properties();
         try {
-            properties.load(new FileInputStream("resources/browser-config.properties"));
+            properties.load(new FileInputStream("Config/browser-config.properties"));
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -7,9 +7,11 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import java.util.Properties;
+
 public class BrowserUtility {
 
-    public static WebDriver opeBrowser(WebDriver driver,String driverVersion,String browserName,String Url) throws Exception {
+    public static WebDriver openBrowser(WebDriver driver,String driverVersion,String browserName,String Url) throws Exception {
 
         switch (browserName.toString().toLowerCase()) {
             case "firefox":
