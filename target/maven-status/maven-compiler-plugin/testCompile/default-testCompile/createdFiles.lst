@@ -1,7 +1,9 @@
 PageObjects\EditComputerPage.class
+Utility\BaseUtils.class
 StepDefinitions\CreateComputerSteps.class
 TestRunner\TestRunner.class
+Utility\ConfigFactory.class
+StepDefinitions\GenericSteps.class
 Utility\BrowserUtility.class
-Utility\PropertiesFileReader.class
 PageObjects\CreateComputerPage.class
 StepDefinitions\EditComputerSteps.class

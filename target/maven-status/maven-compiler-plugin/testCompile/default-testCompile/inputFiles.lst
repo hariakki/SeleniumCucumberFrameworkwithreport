@@ -1,7 +1,9 @@
 F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\Utility\BrowserUtility.java
 F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\PageObjects\EditComputerPage.java
 F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\StepDefinitions\EditComputerSteps.java
+F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\Utility\ConfigFactory.java
 F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\TestRunner\TestRunner.java
-F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\Utility\PropertiesFileReader.java
+F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\StepDefinitions\GenericSteps.java
 F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\StepDefinitions\CreateComputerSteps.java
 F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\PageObjects\CreateComputerPage.java
+F:\FrameworkDevelopment\SeleniumCucumberFramework\src\test\java\Utility\BaseUtils.java

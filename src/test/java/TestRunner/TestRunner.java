@@ -1,5 +1,6 @@
 package TestRunner;
 
+import OwnListeners.ITestListenerImpl;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
@@ -7,7 +8,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 import org.testng.annotations.*;
 
 @CucumberOptions(features = "src/test/java/Features", glue = "StepDefinitions", tags = {"@TagTestReport"}, plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},monochrome = true)
-//@Listeners({OwnListeners.ITestListenerImpl.class})
+@Listeners({ITestListenerImpl.class})
 public class TestRunner {
     private TestNGCucumberRunner testNGCucumberRunner;
 
@@ -19,11 +20,10 @@ public class TestRunner {
     @Test(dataProvider = "scenarios")
     public void scenario(PickleEventWrapper pickleWrapper, CucumberFeatureWrapper cucumberFeature) throws Throwable {
         testNGCucumberRunner.runScenario(pickleWrapper.getPickleEvent());
-       // testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
     }
 
     @DataProvider
-   // @DataProvider (parallel = true)// -- For parallel execution support (which is not going to work for our code)
+   //@DataProvider (parallel = true)// -- For parallel execution support
     public Object[][] scenarios() {
         if (testNGCucumberRunner == null) {
             return new Object[0][0];
