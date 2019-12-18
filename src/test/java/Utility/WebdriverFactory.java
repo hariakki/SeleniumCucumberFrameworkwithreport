@@ -11,10 +11,16 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
 
+/**
+ * Holds fuctions which are dealing with WebDriver object
+ *
+ * @author Arpit Kothari (arpitkothari45@gmail.com)
+ * @version 1.0
+ */
 public class WebdriverFactory {
 
     private WebDriver driver;
-    ConfigFactory obj=new ConfigFactory();
+    ConfigFactory obj = new ConfigFactory();
     private String environment;
     private String browser;
     private String driverVersion;
@@ -25,6 +31,12 @@ public class WebdriverFactory {
         this.driverVersion = obj.getDriverVersion();
     }
 
+    /**
+     * if driver instance is not present then calls createDriver method
+     *
+     * @return WebDriver object
+     * @throws Exception
+     */
     public WebDriver getDriver() throws Exception {
         if (driver == null) {
             driver = createDriver();
@@ -32,6 +44,12 @@ public class WebdriverFactory {
         return driver;
     }
 
+    /**
+     * invokes creating driver method according to the specified environment value in property file
+     *
+     * @return WebDriver object
+     * @throws Exception
+     */
     private WebDriver createDriver() throws Exception {
         switch (environment) {
             case "local":
@@ -44,9 +62,14 @@ public class WebdriverFactory {
         return driver;
     }
 
+    /**
+     * creates driver instance for the remotely available browser
+     *
+     * @return
+     * @throws Exception
+     */
     private RemoteWebDriver createRemoteDriver() throws Exception {
-        // implement remote webdriver here
-        String dockerURI= obj.getRemoteUrl();
+        String dockerURI = obj.getRemoteUrl();
 
         RemoteWebDriver driver;
         DesiredCapabilities capability;
@@ -68,11 +91,17 @@ public class WebdriverFactory {
                 throw new Exception("Unsupported browser: " + browser);
         }
 
-        driver= new RemoteWebDriver(new URL(dockerURI),capability);
+        driver = new RemoteWebDriver(new URL(dockerURI), capability);
 
         return driver;
     }
 
+    /**
+     * creates driver instance according to browser name and also driver version given into property file.if the driver version is given as "latest" then will download latest driver
+     *
+     * @return
+     * @throws Exception
+     */
     private WebDriver createLocalDriver() throws Exception {
 
         switch (browser.toLowerCase()) {
@@ -113,6 +142,11 @@ public class WebdriverFactory {
         }
     }
 
+    /**
+     * this function will close the current instance browser driver
+     *
+     * @param driver
+     */
     public void closeDriver(WebDriver driver) {
         driver.close();
         driver.quit();

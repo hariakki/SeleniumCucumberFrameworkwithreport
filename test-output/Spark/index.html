@@ -58,7 +58,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Dec 16, 2019 12:31:26 PM</span>
+                    <span class="badge badge-primary">Dec 18, 2019 11:45:53 PM</span>
                 </a>
             </li>
         </ul>
@@ -119,7 +119,7 @@
                                             <i class="fa fa-exclamation-circle"></i>
                                         </a>
                                         <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-                                            
+                                            <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
 	                                        <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 	                                        
 	                                        
@@ -134,7 +134,7 @@
                                             <i class="fa fa-tag"></i>
                                         </a>
                                         <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-                                                <a class="dropdown-item" href="#">@TagTestReport</a>
+                                                <a class="dropdown-item" href="#">@Hema</a>
                                         </ul>
                                     </li>
                                 </ul>
@@ -143,29 +143,29 @@
                                 <ul class="test-list-item">
                                     <li class="test-item"  status="fail" test-id="1"
                                             author=""
-                                            tag="@TagTestReport"
+                                            tag="@Hema"
                                             device="">
                                         <div class="status-avatar fail-bg">
                                             <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">Test create computer Action</p> 
-                                                <p class="duration text-sm">0h 5m 23s+736ms</p> 
-                                                <span class="datetime">12:31:27 PM</span>
+                                                <p class="name">As an user , I should be displayed with proper error message according to necessary action.</p> 
+                                                <p class="duration text-sm">0h 3m 30s+82ms</p> 
+                                                <span class="datetime">23:45:56 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-fail">Test create computer Action</h5>
-                                                        <span class='badge badge-success'>12.16.2019 12:31:27</span>
-                                                        <span class='badge badge-danger'>12.16.2019 12:36:51</span>
-                                                        <span class='badge badge-default'>0h 5m 23s+736ms</span>
+                                                        <h5 class="test-status text-fail">As an user , I should be displayed with proper error message according to necessary action.</h5>
+                                                        <span class='badge badge-success'>12.18.2019 23:45:56</span>
+                                                        <span class='badge badge-danger'>12.18.2019 23:49:26</span>
+                                                        <span class='badge badge-default'>0h 3m 30s+82ms</span>
                                                     </div>
                                                     <div class="m-t-15">
-			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @TagTestReport</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @Hema</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -177,26 +177,91 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<h5 class="card-title pl-3">
-				<div class="node">user creates a computer and verify the computer is successfully created</div>
+				<div class="node">verify user is not able to login with invalid credential and getting proper error message</div>
 				<div class="status-avatar float-left fail-bg">
 					<i class="fa fa-times text-white"></i>
 				</div>
 			</h5>
 		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>Given Browser is opened and user is navigated to application url</span>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<h5 class="card-title outline-child">
+									<div class="node">verify user is not able to login with invalid credential and getting proper error message</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+								</h5>
 							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Timed out waiting for page to load.
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Given Browser is opened and user is navigated to application url</span>
+									</div>
+				<div class="details"></div>
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When user clicks on Sign-In Button</span>
+									</div>
+				<div class="details"></div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "my HEMA"</span>
+									</div>
+				<div class="details"></div>
+									<div class="d-flex align-items-center justify-content-start when" title="SignInSteps.userLoginWithBelowCredentials(DataTable)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When user login with below credentials:</span>
+									</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>qwer@.com</td><td>Asdf@1234</td></tr></table></div>
+									<div class="d-flex align-items-center justify-content-start then" title="SignInSteps.errorMessageShouldBeDisplayed(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then error message "Sorry we don't recognise your details." should be displayed</span>
+									</div>
+				<div class="details"></div>
+									<div class="d-flex align-items-center justify-content-start asterisk" title="">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>GenericSteps.tearDown(Scenario)</span>
+									</div>
+				<div class="details"></div>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<h5 class="card-title outline-child">
+									<div class="node">verify user is not able to login with invalid credential and getting proper error message</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+								</h5>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Given Browser is opened and user is navigated to application url</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:42598/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1fca8db1-1247-45ef-8e10-ffa8f596d40f
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51977}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 003443e97258d463084caa7ce5aa6401
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -208,47 +273,65 @@ Session ID: 1fca8db1-1247-45ef-8e10-ffa8f596d40f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:27)
-	at ✽.Browser is opened and user is navigated to application url(file:src/test/java/Features/CreateComputer.feature:6)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:31)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/ErrorTests.feature:5)
 </textarea>
-							<div class="d-flex align-items-center justify-content-start when" title="CreateComputerSteps.user_adds_computer_with_data(DataTable)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
-								</span>
-								<span>When user adds computer with data</span>
-							</div>
-				<div class="details"><table class='runtime-table table-striped table'><tr><td>Home basic</td><td>Sony</td><td>2019-09-15</td></tr></table></div>
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user clicks on Sign-In Button</span>
+									</div>
 				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start and" title="CreateComputerSteps.verify_the_computer_in_the_Filter_list(String)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
-								</span>
-								<span>And verify the computer in the Filter list "Home basic"</span>
-							</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "my HEMA"</span>
+									</div>
 				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start then" title="CreateComputerSteps.added_computer_should_be_available_in_the_list(String)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
-								</span>
-								<span>Then added computer should be available in the list "15 2019"</span>
-							</div>
+									<div class="d-flex align-items-center justify-content-start when" title="SignInSteps.userLoginWithBelowCredentials(DataTable)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user login with below credentials:</span>
+									</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td></td><td>Asdf@1234</td></tr></table></div>
 				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>GenericSteps.tearDown(Scenario)</span>
-							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:42598
+									<div class="d-flex align-items-center justify-content-start then" title="SignInSteps.errorMessageShouldBeDisplayed(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then error message "Sorry we don't recognise your details." should be displayed</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start asterisk" title="">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>GenericSteps.tearDown(Scenario)</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51977}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 003443e97258d463084caa7ce5aa6401
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:35)
-	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:35)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -286,75 +369,1175 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 	at org.testng.TestNG.runSuites(TestNG.java:1049)
 	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:42598
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	... 44 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 64 more
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </textarea>
-					</div>
+							</div>
+						</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">verify user is not able to navigate to registration form without giving valid email id and getting proper error message</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<h5 class="card-title outline-child">
+									<div class="node">verify user is not able to navigate to registration form without giving valid email id and getting proper error message</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+								</h5>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Given Browser is opened and user is navigated to application url</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 93670ea584814befcee65b23b19ce935
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:32)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/ErrorTests.feature:5)
+</textarea>
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user clicks on Sign-In Button</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "my HEMA"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userEntersForRegistrationAndClickOnContinue(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user enters "" for registration and click on continue</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="RegistrationSteps.errorMessageShouldBeDisplayedForRegistration(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then error message "enter a valid value" should be displayed for registration</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start asterisk" title="">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>GenericSteps.tearDown(Scenario)</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 93670ea584814befcee65b23b19ce935
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<h5 class="card-title outline-child">
+									<div class="node">verify user is not able to navigate to registration form without giving valid email id and getting proper error message</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+								</h5>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Given Browser is opened and user is navigated to application url</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52058}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5bdae4959ccbefc44128bb952cceb268
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:32)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/ErrorTests.feature:5)
+</textarea>
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user clicks on Sign-In Button</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "my HEMA"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userEntersForRegistrationAndClickOnContinue(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user enters "aswd@.com" for registration and click on continue</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="RegistrationSteps.errorMessageShouldBeDisplayedForRegistration(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then error message "e-mail address is not valid" should be displayed for registration</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start asterisk" title="">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>GenericSteps.tearDown(Scenario)</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52058}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5bdae4959ccbefc44128bb952cceb268
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+							</div>
+						</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">verify user is not able to register without filling all mandatory field and getting proper error message</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<h5 class="card-title outline-child">
+									<div class="node">verify user is not able to register without filling all mandatory field and getting proper error message</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+								</h5>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Given Browser is opened and user is navigated to application url</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52112}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 283a3f9782234588dac655282384a3fc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:32)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/ErrorTests.feature:5)
+</textarea>
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user clicks on Sign-In Button</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "my HEMA"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userEntersValidEmailAddressForRegistrationAndClickOnContinue()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user enters valid email address for registration and click on continue</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "register"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userFillInRegistrationFormAndClickOnSignUp(DataTable)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user fill in registration form and click on Sign-up</span>
+									</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>Mr</td><td></td><td>Roy</td><td>Address</td><td>post</td><td>Amsterdam</td><td>Asdf@1234</td></tr></table></div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="RegistrationSteps.errorMessageShouldBeDisplayedForRegistrationForm(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then error message "some information below is incomplete or must be corrected" should be displayed for registration form</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start asterisk" title="">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>GenericSteps.tearDown(Scenario)</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52112}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 283a3f9782234588dac655282384a3fc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<h5 class="card-title outline-child">
+									<div class="node">verify user is not able to register without filling all mandatory field and getting proper error message</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+								</h5>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Given Browser is opened and user is navigated to application url</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8ccbb21d0657bfca0f7d2ae0c8aaaa64
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:32)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/ErrorTests.feature:5)
+</textarea>
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user clicks on Sign-In Button</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "my HEMA"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userEntersValidEmailAddressForRegistrationAndClickOnContinue()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user enters valid email address for registration and click on continue</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "register"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userFillInRegistrationFormAndClickOnSignUp(DataTable)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user fill in registration form and click on Sign-up</span>
+									</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>Mr</td><td>Jason</td><td></td><td>Address</td><td>post</td><td>Amsterdam</td><td>Asdf@1234</td></tr></table></div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="RegistrationSteps.errorMessageShouldBeDisplayedForRegistrationForm(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then error message "some information below is incomplete or must be corrected" should be displayed for registration form</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start asterisk" title="">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>GenericSteps.tearDown(Scenario)</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8ccbb21d0657bfca0f7d2ae0c8aaaa64
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<h5 class="card-title outline-child">
+									<div class="node">verify user is not able to register without filling all mandatory field and getting proper error message</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+								</h5>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Given Browser is opened and user is navigated to application url</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: af1912ffce6a700f30b78335d73ae507
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:31)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/ErrorTests.feature:5)
+</textarea>
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user clicks on Sign-In Button</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "my HEMA"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userEntersValidEmailAddressForRegistrationAndClickOnContinue()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user enters valid email address for registration and click on continue</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "register"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userFillInRegistrationFormAndClickOnSignUp(DataTable)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user fill in registration form and click on Sign-up</span>
+									</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>Mr</td><td>Jason</td><td>Roy</td><td></td><td>post</td><td>Amsterdam</td><td>Asdf@1234</td></tr></table></div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="RegistrationSteps.errorMessageShouldBeDisplayedForRegistrationForm(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then error message "some information below is incomplete or must be corrected" should be displayed for registration form</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start asterisk" title="">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>GenericSteps.tearDown(Scenario)</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: af1912ffce6a700f30b78335d73ae507
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<h5 class="card-title outline-child">
+									<div class="node">verify user is not able to register without filling all mandatory field and getting proper error message</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+								</h5>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Given Browser is opened and user is navigated to application url</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 11c9be088accda7176a6d503b6bfc004
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:32)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/ErrorTests.feature:5)
+</textarea>
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user clicks on Sign-In Button</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "my HEMA"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userEntersValidEmailAddressForRegistrationAndClickOnContinue()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user enters valid email address for registration and click on continue</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "register"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userFillInRegistrationFormAndClickOnSignUp(DataTable)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user fill in registration form and click on Sign-up</span>
+									</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>Mr</td><td>Jason</td><td>Roy</td><td>Address</td><td></td><td>Amsterdam</td><td>Asdf@1234</td></tr></table></div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="RegistrationSteps.errorMessageShouldBeDisplayedForRegistrationForm(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then error message "some information below is incomplete or must be corrected" should be displayed for registration form</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start asterisk" title="">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>GenericSteps.tearDown(Scenario)</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 11c9be088accda7176a6d503b6bfc004
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<h5 class="card-title outline-child">
+									<div class="node">verify user is not able to register without filling all mandatory field and getting proper error message</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+								</h5>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Given Browser is opened and user is navigated to application url</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4923bd4dc069027927063b7aa476d0ed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:32)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/ErrorTests.feature:5)
+</textarea>
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user clicks on Sign-In Button</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "my HEMA"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userEntersValidEmailAddressForRegistrationAndClickOnContinue()">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user enters valid email address for registration and click on continue</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then user should be navigated to page with title "register"</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userFillInRegistrationFormAndClickOnSignUp(DataTable)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>When user fill in registration form and click on Sign-up</span>
+									</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>Mr</td><td>Jason</td><td>Roy</td><td>Address</td><td>post</td><td></td><td>Asdf@1234</td></tr></table></div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start then" title="RegistrationSteps.errorMessageShouldBeDisplayedForRegistrationForm(String)">
+										<span class="alert-icon skip-bg">
+											<i class="fa fa-long-arrow-right text-white"></i>
+										</span>
+										<span>Then error message "some information below is incomplete or must be corrected" should be displayed for registration form</span>
+									</div>
+				<div class="details">Step skipped</div>
+									<div class="d-flex align-items-center justify-content-start asterisk" title="">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>GenericSteps.tearDown(Scenario)</span>
+									</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4923bd4dc069027927063b7aa476d0ed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+							</div>
+						</div>
 				</div>
 	</div>
 </div>
                                         </div>
                                     </li>
-                                    <li class="test-item"  status="fail" test-id="8"
+                                    <li class="test-item"  status="fail" test-id="78"
                                             author=""
-                                            tag="@TagTestReport"
+                                            tag="@Hema"
                                             device="">
                                         <div class="status-avatar fail-bg">
                                             <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">Test Edit computer Action</p> 
-                                                <p class="duration text-sm">0h 5m 11s+64ms</p> 
-                                                <span class="datetime">12:36:51 PM</span>
+                                                <p class="name">As an user , I should be able to navigate to the HEMA website and be able to add product(s) to the cart</p> 
+                                                <p class="duration text-sm">0h 1m 9s+936ms</p> 
+                                                <span class="datetime">23:49:26 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-fail">Test Edit computer Action</h5>
-                                                        <span class='badge badge-success'>12.16.2019 12:36:51</span>
-                                                        <span class='badge badge-danger'>12.16.2019 12:42:02</span>
-                                                        <span class='badge badge-default'>0h 5m 11s+64ms</span>
+                                                        <h5 class="test-status text-fail">As an user , I should be able to navigate to the HEMA website and be able to add product(s) to the cart</h5>
+                                                        <span class='badge badge-success'>12.18.2019 23:49:26</span>
+                                                        <span class='badge badge-danger'>12.18.2019 23:50:36</span>
+                                                        <span class='badge badge-default'>0h 1m 9s+936ms</span>
                                                     </div>
                                                     <div class="m-t-15">
-			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @TagTestReport</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @Hema</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -366,7 +1549,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	<div class="card">
 		<div class="card-header" role="tab">
 			<h5 class="card-title pl-3">
-				<div class="node">user Edit a computer and verify the computer is successfully created create</div>
+				<div class="node">verify valid registered user is able to sign-in and sign-out on the hema web application</div>
 				<div class="status-avatar float-left fail-bg">
 					<i class="fa fa-times text-white"></i>
 				</div>
@@ -380,12 +1563,14 @@ Caused by: java.net.ConnectException: Connection refused: connect
 								</span>
 								<span>Given Browser is opened and user is navigated to application url</span>
 							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Timed out waiting for page to load.
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:35634/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7fa195a4-6e42-4c79-8d5b-9d6a4a1a960d
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 52330f22db771532188094eaff6d0ddd
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -397,21 +1582,50 @@ Session ID: 7fa195a4-6e42-4c79-8d5b-9d6a4a1a960d
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:27)
-	at ✽.Browser is opened and user is navigated to application url(file:src/test/java/Features/EditComputer.feature:6)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:31)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/HemaTest.feature:6)
 </textarea>
-							<div class="d-flex align-items-center justify-content-start when" title="EditComputerSteps.user_Edit_introduced_date_as_of_computer(String,String)">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
 								<span class="alert-icon skip-bg">
 									<i class="fa fa-long-arrow-right text-white"></i>
 								</span>
-								<span>When user Edit introduced date as "1965-08-01" of computer "ARRA"</span>
+								<span>When user clicks on Sign-In Button</span>
 							</div>
 				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start then" title="EditComputerSteps.verify_the_introduced_date_has_been_changed_to_of_computer(String,String)">
+							<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
 								<span class="alert-icon skip-bg">
 									<i class="fa fa-long-arrow-right text-white"></i>
 								</span>
-								<span>Then verify the introduced date has been changed to "01 Aug 1965" of computer "ARRA"</span>
+								<span>Then user should be navigated to page with title "my HEMA"</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start when" title="SignInSteps.userLoginWithBelowCredentials(DataTable)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user login with below credentials:</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>asfasf@asdf.com</td><td>Asdf@1234</td></tr></table></div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="SignInSteps.loggedInScreenShouldBeDisplayed()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then logged in screen should be displayed</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start when" title="SignInSteps.userClicksOnSignOutUnderMyHemaDropdown()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user clicks on Sign-out under myHema dropdown</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="SignInSteps.loggedOutHomepageShouldBeDisplayed()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then logged out homepage should be displayed</span>
 							</div>
 				<div class="details">Step skipped</div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
@@ -420,16 +1634,27 @@ Session ID: 7fa195a4-6e42-4c79-8d5b-9d6a4a1a960d
 								</span>
 								<span>GenericSteps.tearDown(Scenario)</span>
 							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:35634
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 52330f22db771532188094eaff6d0ddd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:35)
-	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:35)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -467,43 +1692,573 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 	at org.testng.TestNG.runSuites(TestNG.java:1049)
 	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:35634
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">verify new user is able to register on the hema web application</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Given Browser is opened and user is navigated to application url</span>
+							</div>
+				<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52400}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 304d9ca862acfc09764646961a6f16b8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	... 44 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 64 more
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:32)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/HemaTest.feature:6)
+</textarea>
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user clicks on Sign-In Button</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then user should be navigated to page with title "my HEMA"</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userEntersValidEmailAddressForRegistrationAndClickOnContinue()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user enters valid email address for registration and click on continue</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then user should be navigated to page with title "register"</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start when" title="RegistrationSteps.userFillInRegistrationFormAndClickOnSignUp(DataTable)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user fill in registration form and click on Sign-up</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>Mr</td><td>Jason</td><td>Roy</td><td>Address</td><td>post</td><td>Amsterdam</td><td>Asdf@1234</td></tr></table></div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="RegistrationSteps.loggedInUserDetailsScreenShouldBeDisplayed()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then logged in user details screen should be displayed</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>GenericSteps.tearDown(Scenario)</span>
+							</div>
+				<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52400}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 304d9ca862acfc09764646961a6f16b8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">verify registered user is able to add product to cart</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Given Browser is opened and user is navigated to application url</span>
+							</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 42eb668f03a470e20dce5dd3cd53985f
+*** Element info: {Using=xpath, value=//button[text()='OK and close'][1]}
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Utility.BaseUtils.Click(BaseUtils.java:33)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:34)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/HemaTest.feature:6)
+</textarea>
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userClicksOnSignInButton()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user clicks on Sign-In Button</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then user should be navigated to page with title "my HEMA"</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start when" title="SignInSteps.userLoginWithBelowCredentials(DataTable)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user login with below credentials:</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>asfasf@asdf.com</td><td>Asdf@1234</td></tr></table></div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="SignInSteps.loggedInScreenShouldBeDisplayed()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then logged in screen should be displayed</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userSearchForProductOnHomepage(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user search for product "stamp set" on homepage</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchItemSteps.userSelectsItemNumberFromTheResultList(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And user selects item number "2" from the result list</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchItemSteps.selectsQuantity(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And selects quantity "1"</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchItemSteps.addTheProductToBasket()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And add the product to basket</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="SearchItemSteps.miniShoppingCartShouldBeDisplayed()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then mini shopping cart should be displayed</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start when" title="SearchItemSteps.userClicksOnViewBasketInMiniCart()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user clicks on view basket in mini cart</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then user should be navigated to page with title "Shopping basket - HEMA"</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchItemSteps.theSelectedItemShouldBePresentInShoppingBasket()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And the selected item should be present in shopping basket</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>GenericSteps.tearDown(Scenario)</span>
+							</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 42eb668f03a470e20dce5dd3cd53985f
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</textarea>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">verify non-registered user is able to add product to cart</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl()">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Given Browser is opened and user is navigated to application url</span>
+							</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52548}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46826cd0182f8d074a11886c201d538e
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at StepDefinitions.GenericSteps.browserISOpenedAndUserIsNavigatedToApplicationUrl(GenericSteps.java:31)
+	at ?.Browser is opened and user is navigated to application url(file:src/test/java/Features/HemaTest.feature:6)
+</textarea>
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.userSearchForProductOnHomepage(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user search for product "stamp set" on homepage</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchItemSteps.userSelectsItemNumberFromTheResultList(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And user selects item number "2" from the result list</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchItemSteps.selectsQuantity(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And selects quantity "1"</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchItemSteps.addTheProductToBasket()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And add the product to basket</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="SearchItemSteps.miniShoppingCartShouldBeDisplayed()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then mini shopping cart should be displayed</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start when" title="SearchItemSteps.userClicksOnViewBasketInMiniCart()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user clicks on view basket in mini cart</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="GenericSteps.userShouldBeNavigatedToPageWithTitle(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then user should be navigated to page with title "Shopping basket - HEMA"</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchItemSteps.theSelectedItemShouldBePresentInShoppingBasket()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And the selected item should be present in shopping basket</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>GenericSteps.tearDown(Scenario)</span>
+							</div>
+				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NPH96C5', ip: '192.168.178.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ARPIT-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52548}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46826cd0182f8d074a11886c201d538e
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at Utility.BaseUtils.captureScreenShot(BaseUtils.java:71)
+	at StepDefinitions.GenericSteps.tearDown(GenericSteps.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:58)
+	at TestRunner.TestRunner.scenario(TestRunner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </textarea>
 					</div>
 				</div>

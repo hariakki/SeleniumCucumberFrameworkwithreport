@@ -6,7 +6,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * Reads property file and holds methods to get specific property
+ *
+ * @author Arpit Kothari (arpitkothari45@gmail.com)
+ * @version 1.0
+ */
 public class ConfigFactory {
+
     private Properties properties;
     private final String propertyFilePath = Constants.APP_PROPERTY_PATH;
 
@@ -28,6 +35,12 @@ public class ConfigFactory {
         }
     }
 
+    /**
+     * Gets browser name on which tests will be executed by framework
+     *
+     * @return
+     * @throws Exception
+     */
     public String getBrowser() throws Exception {
         String browser = properties.getProperty("Browser");
         if (browser != null) {
@@ -37,6 +50,11 @@ public class ConfigFactory {
         }
     }
 
+    /**
+     * Gets URL of the application
+     *
+     * @return
+     */
     public String getApplicationUrl() {
         String applicationUrl = properties.getProperty("ApplicationUrl");
         if (applicationUrl != null) {
@@ -46,6 +64,11 @@ public class ConfigFactory {
         }
     }
 
+    /**
+     * Gets URL for the remote execution (i.e. selenium grid)
+     *
+     * @return
+     */
     public String getRemoteUrl() {
         String applicationUrl = properties.getProperty("DockerGridURI");
         if (applicationUrl != null) {
@@ -55,12 +78,17 @@ public class ConfigFactory {
         }
     }
 
+    /**
+     * Gets browser driver version to download it on run time.
+     *
+     * @return
+     * @throws Exception
+     */
     public String getDriverVersion() throws Exception {
         String browser = properties.getProperty("Browser");
         String driverName;
 
         switch (browser.toLowerCase()) {
-
             case "chrome":
                 driverName = "ChromeDriverVersion";
                 break;
@@ -80,6 +108,11 @@ public class ConfigFactory {
         return driverVersion;
     }
 
+    /**
+     * Gets environment name on which tests are to be executed
+     *
+     * @return
+     */
     public String getEnvironment() {
         String environmentName = properties.getProperty("Environment");
 
@@ -90,8 +123,14 @@ public class ConfigFactory {
         }
     }
 
+    /**
+     * Gets value of implicit wait that to be applied for complete test execution
+     *
+     * @return
+     */
     public String getImplicitlyWait() {
-        String implicitlyWait = properties.getProperty("ImplicitlyWait");
+        String implicitlyWait = properties.getProperty("ImplicitWaitInMS");
+
         if (implicitlyWait != null) {
             return implicitlyWait;
         } else {
